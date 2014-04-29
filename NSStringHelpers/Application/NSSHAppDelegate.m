@@ -8,12 +8,23 @@
 
 #import "NSSHAppDelegate.h"
 
+#import "NSSHTestViewController.h"
+
+
 @implementation NSSHAppDelegate
+
+#pragma mark - Private methods
+
+#pragma mark -UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
+    NSSHTestViewController *testViewController = [NSSHTestViewController new];
+    self.window.rootViewController = testViewController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

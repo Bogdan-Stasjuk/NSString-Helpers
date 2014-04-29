@@ -10,15 +10,17 @@
 		4B471F4119103ADD00E94D2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B471F4019103ADD00E94D2B /* Foundation.framework */; };
 		4B471F4319103ADD00E94D2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B471F4219103ADD00E94D2B /* CoreGraphics.framework */; };
 		4B471F4519103ADD00E94D2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B471F4419103ADD00E94D2B /* UIKit.framework */; };
-		4B471F4B19103ADD00E94D2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B471F4919103ADD00E94D2B /* InfoPlist.strings */; };
-		4B471F4D19103ADD00E94D2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B471F4C19103ADD00E94D2B /* main.m */; };
-		4B471F5119103ADD00E94D2B /* NSSHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B471F5019103ADD00E94D2B /* NSSHAppDelegate.m */; };
-		4B471F5319103ADD00E94D2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B471F5219103ADD00E94D2B /* Images.xcassets */; };
 		4B471F5A19103ADD00E94D2B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B471F5919103ADD00E94D2B /* XCTest.framework */; };
 		4B471F5B19103ADD00E94D2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B471F4019103ADD00E94D2B /* Foundation.framework */; };
 		4B471F5C19103ADD00E94D2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B471F4419103ADD00E94D2B /* UIKit.framework */; };
 		4B471F6419103ADD00E94D2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B471F6219103ADD00E94D2B /* InfoPlist.strings */; };
 		4B471F6619103ADD00E94D2B /* NSStringHelpersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B471F6519103ADD00E94D2B /* NSStringHelpersTests.m */; };
+		4B471F8B19103BB700E94D2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B471F7019103BB700E94D2B /* main.m */; };
+		4B471F8C19103BB700E94D2B /* NSSHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B471F7219103BB700E94D2B /* NSSHAppDelegate.m */; };
+		4B471F8F19103BB700E94D2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B471F7E19103BB700E94D2B /* Images.xcassets */; };
+		4B471F9019103BB700E94D2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B471F8419103BB700E94D2B /* InfoPlist.strings */; };
+		4B471F9419103D1700E94D2B /* NSString+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B471F9319103D1700E94D2B /* NSString+Helpers.m */; };
+		4B471F9719103ECC00E94D2B /* NSSHTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B471F9619103ECC00E94D2B /* NSSHTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +38,22 @@
 		4B471F4019103ADD00E94D2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4B471F4219103ADD00E94D2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4B471F4419103ADD00E94D2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4B471F4819103ADD00E94D2B /* NSStringHelpers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSStringHelpers-Info.plist"; sourceTree = "<group>"; };
-		4B471F4A19103ADD00E94D2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4B471F4C19103ADD00E94D2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4B471F4E19103ADD00E94D2B /* NSStringHelpers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSStringHelpers-Prefix.pch"; sourceTree = "<group>"; };
-		4B471F4F19103ADD00E94D2B /* NSSHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSSHAppDelegate.h; sourceTree = "<group>"; };
-		4B471F5019103ADD00E94D2B /* NSSHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSSHAppDelegate.m; sourceTree = "<group>"; };
-		4B471F5219103ADD00E94D2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4B471F5819103ADD00E94D2B /* NSStringHelpersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSStringHelpersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B471F5919103ADD00E94D2B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4B471F6119103ADD00E94D2B /* NSStringHelpersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSStringHelpersTests-Info.plist"; sourceTree = "<group>"; };
 		4B471F6319103ADD00E94D2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4B471F6519103ADD00E94D2B /* NSStringHelpersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringHelpersTests.m; sourceTree = "<group>"; };
+		4B471F7019103BB700E94D2B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B471F7119103BB700E94D2B /* NSSHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSHAppDelegate.h; sourceTree = "<group>"; };
+		4B471F7219103BB700E94D2B /* NSSHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSHAppDelegate.m; sourceTree = "<group>"; };
+		4B471F7319103BB700E94D2B /* NSStringHelpers-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NSStringHelpers-Info.plist"; sourceTree = "<group>"; };
+		4B471F7419103BB700E94D2B /* NSStringHelpers-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStringHelpers-Prefix.pch"; sourceTree = "<group>"; };
+		4B471F7E19103BB700E94D2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4B471F8519103BB700E94D2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4B471F9219103D1700E94D2B /* NSString+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helpers.h"; sourceTree = "<group>"; };
+		4B471F9319103D1700E94D2B /* NSString+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helpers.m"; sourceTree = "<group>"; };
+		4B471F9519103ECC00E94D2B /* NSSHTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSHTestViewController.h; sourceTree = "<group>"; };
+		4B471F9619103ECC00E94D2B /* NSSHTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSHTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		4B471F3419103ADD00E94D2B = {
 			isa = PBXGroup;
 			children = (
+				4B471F9119103D1700E94D2B /* NSString+Helpers */,
 				4B471F4619103ADD00E94D2B /* NSStringHelpers */,
 				4B471F5F19103ADD00E94D2B /* NSStringHelpersTests */,
 				4B471F3F19103ADD00E94D2B /* Frameworks */,
@@ -107,23 +114,16 @@
 		4B471F4619103ADD00E94D2B /* NSStringHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				4B471F4F19103ADD00E94D2B /* NSSHAppDelegate.h */,
-				4B471F5019103ADD00E94D2B /* NSSHAppDelegate.m */,
-				4B471F5219103ADD00E94D2B /* Images.xcassets */,
-				4B471F4719103ADD00E94D2B /* Supporting Files */,
+				4B471F6F19103BB700E94D2B /* Application */,
+				4B471F7519103BB700E94D2B /* Controllers */,
+				4B471F7619103BB700E94D2B /* Helpers */,
+				4B471F7819103BB700E94D2B /* Library */,
+				4B471F7919103BB700E94D2B /* Models */,
+				4B471F7A19103BB700E94D2B /* Resources */,
+				4B471F8719103BB700E94D2B /* Vendors */,
+				4B471F8819103BB700E94D2B /* Views */,
 			);
 			path = NSStringHelpers;
-			sourceTree = "<group>";
-		};
-		4B471F4719103ADD00E94D2B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4B471F4819103ADD00E94D2B /* NSStringHelpers-Info.plist */,
-				4B471F4919103ADD00E94D2B /* InfoPlist.strings */,
-				4B471F4C19103ADD00E94D2B /* main.m */,
-				4B471F4E19103ADD00E94D2B /* NSStringHelpers-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4B471F5F19103ADD00E94D2B /* NSStringHelpersTests */ = {
@@ -142,6 +142,168 @@
 				4B471F6219103ADD00E94D2B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B471F6F19103BB700E94D2B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4B471F7019103BB700E94D2B /* main.m */,
+				4B471F7119103BB700E94D2B /* NSSHAppDelegate.h */,
+				4B471F7219103BB700E94D2B /* NSSHAppDelegate.m */,
+				4B471F7319103BB700E94D2B /* NSStringHelpers-Info.plist */,
+				4B471F7419103BB700E94D2B /* NSStringHelpers-Prefix.pch */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4B471F7519103BB700E94D2B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B471F9519103ECC00E94D2B /* NSSHTestViewController.h */,
+				4B471F9619103ECC00E94D2B /* NSSHTestViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4B471F7619103BB700E94D2B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4B471F7819103BB700E94D2B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		4B471F7919103BB700E94D2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4B471F7A19103BB700E94D2B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B471F7B19103BB700E94D2B /* Assets */,
+				4B471F8219103BB700E94D2B /* Data */,
+				4B471F8319103BB700E94D2B /* Localizations */,
+				4B471F8619103BB700E94D2B /* NIBs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4B471F7B19103BB700E94D2B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4B471F7C19103BB700E94D2B /* Images */,
+				4B471F8019103BB700E94D2B /* Sound */,
+				4B471F8119103BB700E94D2B /* Video */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4B471F7C19103BB700E94D2B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4B471F7D19103BB700E94D2B /* Default */,
+				4B471F7F19103BB700E94D2B /* Icon */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4B471F7D19103BB700E94D2B /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				4B471F7E19103BB700E94D2B /* Images.xcassets */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		4B471F7F19103BB700E94D2B /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		4B471F8019103BB700E94D2B /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		4B471F8119103BB700E94D2B /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		4B471F8219103BB700E94D2B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4B471F8319103BB700E94D2B /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				4B471F8419103BB700E94D2B /* InfoPlist.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		4B471F8619103BB700E94D2B /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NIBs;
+			sourceTree = "<group>";
+		};
+		4B471F8719103BB700E94D2B /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		4B471F8819103BB700E94D2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B471F8919103BB700E94D2B /* TableCells */,
+				4B471F8A19103BB700E94D2B /* TableViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B471F8919103BB700E94D2B /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		4B471F8A19103BB700E94D2B /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		4B471F9119103D1700E94D2B /* NSString+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4B471F9219103D1700E94D2B /* NSString+Helpers.h */,
+				4B471F9319103D1700E94D2B /* NSString+Helpers.m */,
+			);
+			path = "NSString+Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +382,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B471F4B19103ADD00E94D2B /* InfoPlist.strings in Resources */,
-				4B471F5319103ADD00E94D2B /* Images.xcassets in Resources */,
+				4B471F8F19103BB700E94D2B /* Images.xcassets in Resources */,
+				4B471F9019103BB700E94D2B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +402,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B471F5119103ADD00E94D2B /* NSSHAppDelegate.m in Sources */,
-				4B471F4D19103ADD00E94D2B /* main.m in Sources */,
+				4B471F8C19103BB700E94D2B /* NSSHAppDelegate.m in Sources */,
+				4B471F8B19103BB700E94D2B /* main.m in Sources */,
+				4B471F9719103ECC00E94D2B /* NSSHTestViewController.m in Sources */,
+				4B471F9419103D1700E94D2B /* NSString+Helpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,18 +428,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4B471F4919103ADD00E94D2B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B471F4A19103ADD00E94D2B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		4B471F6219103ADD00E94D2B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4B471F6319103ADD00E94D2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4B471F8419103BB700E94D2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B471F8519103BB700E94D2B /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -359,8 +523,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSStringHelpers/NSStringHelpers-Prefix.pch";
-				INFOPLIST_FILE = "NSStringHelpers/NSStringHelpers-Info.plist";
+				GCC_PREFIX_HEADER = "NSStringHelpers/Application/NSStringHelpers-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/NSStringHelpers/Application/NSStringHelpers-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -372,8 +536,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSStringHelpers/NSStringHelpers-Prefix.pch";
-				INFOPLIST_FILE = "NSStringHelpers/NSStringHelpers-Info.plist";
+				GCC_PREFIX_HEADER = "NSStringHelpers/Application/NSStringHelpers-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/NSStringHelpers/Application/NSStringHelpers-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
