@@ -12,4 +12,6 @@
 + (BOOL)isEmpty:(NSString *)string;
 + (BOOL)isUInteger:(NSString *)string;
 
+- (BOOL)isMatchesRegExp:(NSString *)regExp;
+
 @end

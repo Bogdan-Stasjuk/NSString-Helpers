@@ -116,12 +116,7 @@
 			children = (
 				4B471F6F19103BB700E94D2B /* Application */,
 				4B471F7519103BB700E94D2B /* Controllers */,
-				4B471F7619103BB700E94D2B /* Helpers */,
-				4B471F7819103BB700E94D2B /* Library */,
-				4B471F7919103BB700E94D2B /* Models */,
 				4B471F7A19103BB700E94D2B /* Resources */,
-				4B471F8719103BB700E94D2B /* Vendors */,
-				4B471F8819103BB700E94D2B /* Views */,
 			);
 			path = NSStringHelpers;
 			sourceTree = "<group>";
@@ -165,34 +160,11 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		4B471F7619103BB700E94D2B /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		4B471F7819103BB700E94D2B /* Library */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Library;
-			sourceTree = "<group>";
-		};
-		4B471F7919103BB700E94D2B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		4B471F7A19103BB700E94D2B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				4B471F7B19103BB700E94D2B /* Assets */,
-				4B471F8219103BB700E94D2B /* Data */,
 				4B471F8319103BB700E94D2B /* Localizations */,
-				4B471F8619103BB700E94D2B /* NIBs */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -201,8 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				4B471F7C19103BB700E94D2B /* Images */,
-				4B471F8019103BB700E94D2B /* Sound */,
-				4B471F8119103BB700E94D2B /* Video */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -211,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				4B471F7D19103BB700E94D2B /* Default */,
-				4B471F7F19103BB700E94D2B /* Icon */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -224,77 +193,12 @@
 			path = Default;
 			sourceTree = "<group>";
 		};
-		4B471F7F19103BB700E94D2B /* Icon */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Icon;
-			sourceTree = "<group>";
-		};
-		4B471F8019103BB700E94D2B /* Sound */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sound;
-			sourceTree = "<group>";
-		};
-		4B471F8119103BB700E94D2B /* Video */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Video;
-			sourceTree = "<group>";
-		};
-		4B471F8219103BB700E94D2B /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		4B471F8319103BB700E94D2B /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
 				4B471F8419103BB700E94D2B /* InfoPlist.strings */,
 			);
 			path = Localizations;
-			sourceTree = "<group>";
-		};
-		4B471F8619103BB700E94D2B /* NIBs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NIBs;
-			sourceTree = "<group>";
-		};
-		4B471F8719103BB700E94D2B /* Vendors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendors;
-			sourceTree = "<group>";
-		};
-		4B471F8819103BB700E94D2B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4B471F8919103BB700E94D2B /* TableCells */,
-				4B471F8A19103BB700E94D2B /* TableViews */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		4B471F8919103BB700E94D2B /* TableCells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TableCells;
-			sourceTree = "<group>";
-		};
-		4B471F8A19103BB700E94D2B /* TableViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TableViews;
 			sourceTree = "<group>";
 		};
 		4B471F9119103D1700E94D2B /* NSString+Helpers */ = {
@@ -602,6 +506,7 @@
 				4B471F6B19103ADD00E94D2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B471F6C19103ADD00E94D2B /* Build configuration list for PBXNativeTarget "NSStringHelpersTests" */ = {
 			isa = XCConfigurationList;
@@ -610,6 +515,7 @@
 				4B471F6E19103ADD00E94D2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

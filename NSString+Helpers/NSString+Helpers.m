@@ -47,4 +47,23 @@
     return !numberOfMatches;
 }
 
+#pragma mark -Nonstatic
+
+- (BOOL)isMatchesRegExp:(NSString *)regExp
+{
+    NSError *error = nil;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regExp
+                                                                           options:NSRegularExpressionCaseInsensitive
+                                                                             error:&error];
+    if (error) {
+        ALog("Error: %@", error);
+        return NO;
+    }
+    
+    NSUInteger numberOfMatches = [regex numberOfMatchesInString:self
+                                                        options:0
+                                                          range:NSMakeRange(0, self.length)];
+    return numberOfMatches;
+}
+
 @end
