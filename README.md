@@ -3,7 +3,7 @@ NSString-Helpers
 
 A category on NSString for validation and manipulation.
 
-#Validation methods
+##Validation methods
 
 ```objc
 + (BOOL)isEmpty:(NSString *)string;
@@ -12,7 +12,7 @@ A category on NSString for validation and manipulation.
 - (BOOL)isMatchesRegExp:(NSString *)regExp;
 ```
 
-#Manipulation methods
+##Manipulation methods
 
 ```objc
 + (NSString *)trim:(NSString *)string;
@@ -27,6 +27,16 @@ Compatibility
 =============
 
 This class has been tested back to iOS 6.0.
+
+Installation
+============
+
+__Cocoapods__: `pod 'NSString+Helpers'`
+__Manual__: Copy the __NSString+Helpers__ folder in your project
+
+Import header in your project. .pch is a good place ;)
+
+    #import "NSString+Helpers.h"
 
 License
 =======
