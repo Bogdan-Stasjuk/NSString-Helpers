@@ -1,7 +1,22 @@
 NSString-Helpers
 ================
 
-A category on NSString for validation and manipulations.
+A category on NSString for validation and manipulation.
+
+#Validation methods
+
+```objc
++ (BOOL)isEmpty:(NSString *)string;
++ (BOOL)isUInteger:(NSString *)string;
+
+- (BOOL)isMatchesRegExp:(NSString *)regExp;
+```
+
+#Manipulation methods
+
+```objc
++ (NSString *)trim:(NSString *)string;
+```
 
 Demo
 ====
