@@ -31,20 +31,8 @@
 {
     if ([self isEmpty:string])
         return NO;
-    
-    NSString *pattern = @"[^\\d]";
-    NSError *error = nil;
-    NSRegularExpression *regExp = [[NSRegularExpression alloc] initWithPattern:pattern options:0 error:&error];
-    if (error)
-    {
-        ALog("%@", error);
-    }
-    
     string = [self trim:string];
-    NSRange range = NSMakeRange(0, string.length);
-    NSUInteger numberOfMatches = [regExp numberOfMatchesInString:string options:0 range:range];
-    
-    return !numberOfMatches;
+    return [string isMatchesRegExp:@"^\\d+$"];
 }
 
 #pragma mark -Nonstatic
