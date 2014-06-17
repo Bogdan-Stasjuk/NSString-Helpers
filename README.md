@@ -18,6 +18,13 @@ A category on NSString for validation and manipulation.
 + (NSString *)trim:(NSString *)string;
 ```
 
+##Helper methods
+
+```objc
+- (CGFloat)heightWithFont:(UIFont *)font andWidth:(CGFloat)width;
+```
+
+
 Demo
 ====
 
