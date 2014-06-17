@@ -54,4 +54,26 @@
     return numberOfMatches;
 }
 
+- (CGFloat)heightWithFont:(UIFont *)font andWidth:(CGFloat)width
+{
+    CGFloat height = 0.f;
+    UIFont *measuringFont = [UIFont fontWithName:font.fontName size:font.pointSize + 0.5f];
+    if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] == NSOrderedAscending) {
+        
+        height = [self sizeWithFont:measuringFont
+                  constrainedToSize:CGSizeMake(width, CGFLOAT_MAX)
+                      lineBreakMode:NSLineBreakByWordWrapping].height;
+    } else {
+        height = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
+                                    options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                 attributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                             measuringFont,
+                                             NSFontAttributeName,
+                                             nil]
+                                    context:nil].size.height;
+    }
+    
+    return height;
+}
+
 @end
