@@ -57,7 +57,7 @@
 - (CGFloat)heightWithFont:(UIFont *)font andWidth:(CGFloat)width
 {
     CGFloat height = 0.f;
-    UIFont *measuringFont = [UIFont fontWithName:font.fontName size:font.pointSize + 0.5f];
+    UIFont *measuringFont = [UIFont fontWithName:font.fontName size:font.pointSize + 1.f];
     if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] == NSOrderedAscending) {
         
         height = [self sizeWithFont:measuringFont
@@ -71,6 +71,10 @@
                                              NSFontAttributeName,
                                              nil]
                                     context:nil].size.height;
+    }
+    
+    if (height < 150.f) {
+        height += 20;
     }
     
     return height;
