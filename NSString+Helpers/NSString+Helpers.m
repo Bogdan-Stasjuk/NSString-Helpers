@@ -59,9 +59,12 @@
     CGSize size = CGSizeZero;
     UIFont *measuringFont = [UIFont fontWithName:font.fontName size:font.pointSize + 1.f];
     if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] == NSOrderedAscending) {
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
         size = [self sizeWithFont:measuringFont
                 constrainedToSize:constrainedSize
                     lineBreakMode:NSLineBreakByWordWrapping];
+#pragma GCC diagnostic pop
     } else {
         size = [self boundingRectWithSize:constrainedSize
                                   options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
