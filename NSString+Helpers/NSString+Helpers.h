@@ -13,6 +13,6 @@
 + (BOOL)isUInteger:(NSString *)string;
 
 - (BOOL)isMatchesRegExp:(NSString *)regExp;
-- (CGFloat)heightWithFont:(UIFont *)font andWidth:(CGFloat)width;
+- (CGSize)sizeWithFont:(UIFont *)font inScopeOfSize:(CGSize)constrainedSize;
 
 @end

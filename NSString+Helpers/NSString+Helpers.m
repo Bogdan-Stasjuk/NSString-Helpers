@@ -54,30 +54,26 @@
     return numberOfMatches;
 }
 
-- (CGFloat)heightWithFont:(UIFont *)font andWidth:(CGFloat)width
+- (CGSize)sizeWithFont:(UIFont *)font inScopeOfSize:(CGSize)constrainedSize
 {
-    CGFloat height = 0.f;
+    CGSize size = CGSizeZero;
     UIFont *measuringFont = [UIFont fontWithName:font.fontName size:font.pointSize + 1.f];
     if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] == NSOrderedAscending) {
-        
-        height = [self sizeWithFont:measuringFont
-                  constrainedToSize:CGSizeMake(width, CGFLOAT_MAX)
-                      lineBreakMode:NSLineBreakByWordWrapping].height;
+        size = [self sizeWithFont:measuringFont
+                constrainedToSize:constrainedSize
+                    lineBreakMode:NSLineBreakByWordWrapping];
     } else {
-        height = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
-                                    options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
-                                 attributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                             measuringFont,
-                                             NSFontAttributeName,
-                                             nil]
-                                    context:nil].size.height;
+        size = [self boundingRectWithSize:constrainedSize
+                                  options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                               attributes:@{NSFontAttributeName: measuringFont}
+                                  context:nil].size;
     }
     
-    if (height < 150.f) {
-        height += 20;
+    if (size.height < 150.f) {
+        size.height += 20;
     }
     
-    return height;
+    return size;
 }
 
 @end
